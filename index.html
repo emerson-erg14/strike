@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Codestricke</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0"><img src="logo.png" alt="Logo">Codestricke</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Soluções</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="consultoria.html" class="dropdown-item">Consultoria</a>
+                                <a href="gerenciamento.html" class="dropdown-item">Gerenciamento</a>
+                                <a href="integracao.html" class="dropdown-item">Integração</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="seguranca_aplicacoes.html" class="dropdown-item">Segurança de aplicações</a>
+                                <a href="seguranca_nuvem.html" class="dropdown-item">Segurança na Nuvem</a>
+                                <a href="readteaming.html" class="dropdown-item">Read Teaming</a>
+                            </div>
+                        </div>
+                        <a href="about.html" class="nav-item nav-link">A Empresa</a>
+                        <a href="conteudos.html" class="nav-item nav-link">Conteúdos</a>
+                        <a href="contact.html" class="nav-item nav-link">Fale Conosco</a>
+                    </div>
+                      <!--<butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
+                      <!-- <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a> -->
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated zoomIn">Protegendo seu Futuro Digital</h1>
+                            <p class="text-white pb-3 animated zoomIn">Soluções Avançadas de Cibersegurança para Garantir a Integridade e Segurança de seus Dados</p>
+                            <a href="contact.html" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">FALE AGORA COM UM ESPECIALISTA</a>
+                           <!-- <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Fale Conosco</a>-->
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid" src="img/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-2">
+                            <h6 class="position-relative text-primary ps-4">Sobre nos!</h6>
+                            <h2 class="mt-2">CodeStrike Líder em Segurança Cibernética</h2>
+                        </div>
+                        <p class="mb-4">Desde sua fundação, a CodeStrike Solutions tem se destacado como um pioneiro na criação e desenvolvimento de soluções sofisticadas de malware. Nossa missão é explorar e expandir as fronteiras da cibersegurança, criando ferramentas que desafiam a proteção digital e revelam novas perspectivas sobre a segurança de aplicações web, mobile e APIs</p>
+                        
+                      
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-primary ps-4">Serviços</h6>
+                    <h2 class="mt-2">Quais soluções oferecemos ?</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-cogs fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Black Box Testing</h5>
+                            <p>Na Codestricke, oferecemos serviços de teste Black Box para identificar vulnerabilidades e falhas em seus sistemas sem conhecimento prévio do ambiente.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-cogs  fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">White Box Testing</h5>
+                            <p>Na Codestricke, oferecemos serviços de White Box Testing para uma análise aprofundada da segurança do seu sistema. Com o acesso completo ao código-fonte e à arquitetura, nosso time de especialistas realiza uma avaliação minuciosa para identificar vulnerabilidades internas e falhas de segurança.</p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-cogs fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Gray Box Testing</h5>
+                            <p>Na Codestricke, oferecemos serviços de Gray Box Testing para fornecer uma visão equilibrada da segurança do seu sistema. Com acesso parcial às informações, nossos especialistas realizam uma análise que combina a perspectiva interna e externa, identificando vulnerabilidades e pontos fracos de forma eficiente.</p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-bug fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Penteste Interno</h5>
+                            <p>Na Codestricke, oferecemos serviços de Penteste Interno para identificar e corrigir vulnerabilidades dentro da sua rede corporativa. Nosso time de especialistas realiza uma análise detalhada simulando ataques internos, ajudando a proteger seus ativos contra ameaças provenientes de dentro da organização</p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-bug fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Penteste Externo</h5>
+                            <p>Na Codestricke, oferecemos serviços de Penteste Externo para avaliar a segurança das suas fronteiras digitais. Nossos especialistas simulam ataques externos para identificar vulnerabilidades e fraquezas antes que possam ser exploradas por cibercriminosos.</p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-phone-alt fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Teste de Engenharia Social</h5>
+                            <p>Na Codestricke, oferecemos serviços especializados em Engenharia Social para avaliar a resiliência da sua equipe contra ataques baseados em manipulação e engano. Nossos testes simulam técnicas de engenharia social para identificar vulnerabilidades na conscientização e nas práticas de segurança de seus colaboradores.</p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-bug fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">DevSecOps</h5>
+                            <p>Na Codestricke, oferecemos soluções de DevSecOps para integrar a segurança em todas as fases do ciclo de desenvolvimento de software. Nosso objetivo é garantir que a segurança seja parte fundamental do seu processo de desenvolvimento, desde o planejamento até a produção.</p>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+      
+        <!-- Portfolio End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Endereço</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>54, Marcelino Alves de Oliveira, Belo Horizonte, MG</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+55 31 99840-2112</p>
+                        <p><i class="fa fa-envelope me-3"></i>contato@codestrike.com</p>
+                    
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Links Populares</h5>
+                        <a class="btn btn-link" href="">Sobre nos</a>
+                        <a class="btn btn-link" href="">Contato</a>
+                        <a class="btn btn-link" href="">Privacidade e Politicas</a>
+                        <a class="btn btn-link" href="">Termos & Condições</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Galeria de Projetos</h5>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Codestricke</a>, Todos os direitos reservados. 
+							
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Ajuda</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
